@@ -24,20 +24,29 @@ export default function App() {
  
   return (
     <div> 
-      <nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
-        <label className='navbar-brand'> App</label>
-        <ul className='navbar-nav'>
-        <li className='nav-item'>
+     
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" >App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+      <li className='nav-item'>
             <Link to="/ReactCRUD" className='nav-link dashboard'>Home</Link>
           </li>
           <li className='nav-item'>
             <Link to="/Users" className='nav-link dashboard'>Users</Link>
           </li>
           <li className='nav-item'>
-            <Link to="/Adduser" className='nav-link adduser'>Add user</Link>
+            <Link to="/Adduser" className='nav-link dashboard'>Add user</Link>
           </li>
-        </ul>
-      </nav>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
     
    <Routes>
     <Route path='/ReactCRUD' element={<Home/>}/>
