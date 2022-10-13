@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ReactCRUD/static/css/main.a24c1cf2.css",
-    "main.js": "/ReactCRUD/static/js/main.8da9026c.js",
+    "main.js": "/ReactCRUD/static/js/main.1d3b06eb.js",
     "static/js/496.c2a0b561.chunk.js": "/ReactCRUD/static/js/496.c2a0b561.chunk.js",
     "index.html": "/ReactCRUD/index.html",
     "main.a24c1cf2.css.map": "/ReactCRUD/static/css/main.a24c1cf2.css.map",
-    "main.8da9026c.js.map": "/ReactCRUD/static/js/main.8da9026c.js.map",
+    "main.1d3b06eb.js.map": "/ReactCRUD/static/js/main.1d3b06eb.js.map",
     "496.c2a0b561.chunk.js.map": "/ReactCRUD/static/js/496.c2a0b561.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a24c1cf2.css",
-    "static/js/main.8da9026c.js"
+    "static/js/main.1d3b06eb.js"
   ]
 }
