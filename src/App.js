@@ -63,7 +63,8 @@ export default function App() {
 function User({userlist,setUserlist}){
   const navigate=useNavigate() 
   return(
-    <table className='table table-striped'>
+    <div className='table-responsive'>
+    <table className='table table-striped '>
       <thead>
         <th>S.no</th>
         <th>Profile pic</th>
@@ -93,6 +94,7 @@ function User({userlist,setUserlist}){
         ))}
       </tbody>
     </table>
+    </div>
   )
 }
 
