@@ -130,35 +130,37 @@ function Adduser({userlist,setUserlist}){
   )
 }
 function Updateuserdetails({userlist}){
-  const [uppic,setUppic]=useState("")
-  const [upname,setUpname]=useState("")
-  const [upusername,setUpusername]=useState("")
-  const [upemail,setUpemail]=useState("")
-
   const {userid}=useParams()
   const navigate=useNavigate()
   const book=userlist[userid-1]
+  
+  const [uppic,setUppic]=useState(book.pic)
+  const [upname,setUpname]=useState(book.name)
+  const [upusername,setUpusername]=useState(book.username)
+  const [upemail,setUpemail]=useState(book.email)
+
+  
 
  
-  
+
   return(
     <div className='update'>
       <div className='profile'>Profile</div>
     <div className='input-group'>
       <div className='input-group-prepend'><span className='input-group-text'>Profile url</span></div>
-    <input type="text"  defaultValue={book.pic}  onChange={(event)=>{setUppic(event.target.value)}}/>  
+    <input type="text"  value={uppic}  onChange={(event)=>{setUppic(event.target.value)}}/>  
     </div>
     <div className='input-group'>
       <div className='input-group-prepend'><span className='input-group-text'>Name</span></div>
-      <input type="text" defaultValue={book.name} onChange={(event)=>{setUpname(event.target.value)}}/>
+      <input type="text" value={upname} onChange={(event)=>{setUpname(event.target.value)}}/>
     </div>
     <div className='input-group'>
       <div className='input-group-prepend'><span className='input-group-text'>Username</span></div>
-      <input type="text" defaultValue={book.username} onChange={(event)=>{setUpusername(event.target.value)}}/>
+      <input type="text" value={upusername} onChange={(event)=>{setUpusername(event.target.value)}}/>
     </div>
     <div className='input-group'>
       <div className='input-group-prepend'><span className='input-group-text'>Email</span></div>
-      <input type="text" defaultValue={book.email} onChange={(event)=>{setUpemail(event.target.value)}}/>
+      <input type="text" value={upemail} onChange={(event)=>{setUpemail(event.target.value)}}/>
     </div>
     
     
